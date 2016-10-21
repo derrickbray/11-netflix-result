@@ -4,25 +4,26 @@ import NetflixResultView from 'views/netflix-result.js';
 // Create a new instance of the view passing in the result element and an empty object as the arguments
 //
 
-const searchForm =;
-const searchResult =;
+const searchForm;
+const searchResult;
 
 const searchInput = NetflixResultView(searchResult, []) {};
 
 searchInput.then((info) => {
   after.innerText = info;
 })
-// debugger;
 
-const uv = new NetflixResultView(document.querySelector('.movie'), {});
+const nf = new NetflixResultView(document.querySelector('.movie'), {});
 
 fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
-.then((result) => result.json())
+.then((searchResult) => searchResult.json())
 .then((data) => {
     const movie = data.results[0];
-    uv.model = movie;
-    uv.render();
+    nf.model = movie;
+    nf.render();
+    console.log('hello');
 });
+// debugger;
 
 // const uv = new UserView(document.querySelector('.user'), {});
 //

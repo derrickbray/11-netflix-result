@@ -1,21 +1,18 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 
 .card__container {
   display: flex;
   justify-content: space-around;
-  // height: 100vh;
   padding: 10%;
   background: black;
 }
 
 .movie__card {
-  // width: 50%;
-  // height: 50%;
   background: grey;
 }
 
@@ -23,12 +20,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  // padding: 0.5rem;
   background: white;
 
   &__title {
-    color: grey;
     width: 100%;
+    color: grey;
   }
 
   &__button {
@@ -38,6 +34,26 @@
   }
 }
 
-.movie__show-picture {
+.movie__show {
+  display: flex;
+  justify-content: space-between;
+
+  &-right {
+    width: 60%;
+  }
+
+  &-picture {
+    max-width: 100%;
 
   }
+}
+
+.movie__show-rating-plus-icon{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.fa {
+  align-self: center;
+}

@@ -15,7 +15,6 @@ export default class NetflixResultView {
   }
 }
 
-
 // {
 //   "unit": 883,
 //   "show_id": 70299043,

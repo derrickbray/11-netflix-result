@@ -10,7 +10,7 @@ export default class NetflixResultView {
     this.el.querySelector('.movie__category').innerText = this.model.category;
     this.el.querySelector('.movie__rating').innerText = this.model.rating;
     this.el.querySelector('.movie__picture').src = this.model.poster;
-    this.el.querySelector('.movie__address').innerText = this.model.summary;
+    this.el.querySelector('.movie__summary').innerText = this.model.summary;
     this.el.querySelector('.movie__show-cast').innerText = this.model.show_cast;
   }
 }

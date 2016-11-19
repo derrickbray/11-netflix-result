@@ -5,14 +5,21 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 
+body {
+  margin: 0;
+}
+
 .card__container {
   display: flex;
-  justify-content: space-around;
-  padding: 10%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background: black;
+  padding: 2rem;
 }
 
 .movie__card {
+  max-width: 60rem;
   background: grey;
 }
 
@@ -23,7 +30,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   background: white;
 
   &__title {
-    width: 100%;
+    flex-grow: 1;
+    // width: 100%;
     color: grey;
   }
 

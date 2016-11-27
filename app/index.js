@@ -22,7 +22,7 @@ form.addEventListener('submit', (ev) => {
     });
 });
 
-fetch(`${apiUrl}?title=Attack%20on%20titan`)
+fetch(`${apiUrl}?title=futurama`)
   .then((searchResult) => searchResult.json())
   .then((data) => {
     const movie = data;

@@ -8,7 +8,6 @@ const movieEl = document.querySelector('.movie');
 const input = document.querySelector('.search__title');
 const searchView = new NetflixResultView(movieEl, {});
 const form = document.querySelector('.search');
-// const response = document.querySelector('.response');
 
 form.addEventListener('submit', (ev) => {
   ev.preventDefault();
@@ -29,4 +28,3 @@ fetch(`${apiUrl}?title=futurama`)
     searchView.model = movie;
     searchView.render();
   });
-// debugger;

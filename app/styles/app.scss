@@ -1,6 +1,66 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+
+body {
+  margin: 0;
+}
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+  padding: 2rem;
+}
+
+.movie__card {
+  max-width: 60rem;
+  background: grey;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+
+  &__title {
+    flex-grow: 1;
+    color: grey;
+  }
+
+  &__button {
+    padding: 0.5rem;
+    background: blue;
+    color: white;
+  }
+}
+
+.movie__show {
+  display: flex;
+  justify-content: space-between;
+
+  &-right {
+    width: 60%;
+  }
+
+  &-picture {
+    max-width: 100%;
+
+  }
+}
+
+.movie__show-rating-plus-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.fa {
+  align-self: center;
+}

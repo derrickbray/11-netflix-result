@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>11 Netflix Result</title>
+  <title>Netflix Results</title>
   <link rel="stylesheet" href="/app.css">
-</head>hello
+</head>
+
 <body>
+  <section class="card__container">
+    <div class="movie__card">
+      <form class="search">
+        <input type="text" placeholder="Movie Title" class="search__title">
+        <div class="search__button">
+          <buttton type="submit" class="search__button-btn">Search</buttton>
+        </div>
+      </form>
+      <figure class="movie">
+        <div class="movie__show">
+          <div class="movie__show-left">
+            <h1 class="movie__show-title"></h1>
+            <h3 class="movie__show-category"></h3>
+            <div class="movie__show-rating-plus-icon">
+              <h3 class="movie__show-rating"></h3>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="movie__show-right">
+            <img src="" alt="Sorry show not found!" class="movie__show-picture">
+          </div>
+        </div>
+        <h3 class="movie__summary-title">Summary</h3>
+        <p class="movie__summary"></p>
+        <h3 class="movie__show-cast-title">Cast</h3>
+        <p class="movie__show-cast"></p>
+      </figure>
+    </div>
+  </section>
+
+
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>
